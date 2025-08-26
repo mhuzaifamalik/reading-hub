@@ -15,7 +15,7 @@ function about() {
 
                 <Sec rtl={false} image={img5} title="Minimalism Meets Depth" subtitle="What Makes Us Different" descs="Whether you’re a lifelong book lover or just starting your literary journey, TheReadingHub welcomes you. Explore our diverse genres, share your thoughts through ratings and reviews, and connect with fellow enthusiasts. We’re more than just a reading platform; we’re a community that celebrates the art of storytelling in all its forms. 
 
-Easily find content tailored to your mood or taste — from drama and historical fiction to horror and sci-fi. Let your voice be heard by rating stories, leaving feedback, and discovering top-rated tales from fellow readers. Support your favorite genres with tasteful merchandise like T-shirts, mugs, and posters. We value your experience, so ads are minimal and donations are always optional. Plus, explore carefully selected books and products through our affiliate curation — all handpicked with passionate readers in mind." />
+Easily find content tailored to your mood or taste — from drama and historical fiction to horror and sci-fi. Let your voice be heard by rating stories, leaving feedback, and discovering top-rated tales from fellow readers. Support your favorite genres with tasteful Signature Collection like T-shirts, mugs, and posters. We value your experience, so ads are minimal and donations are always optional. Plus, explore carefully selected books and products through our affiliate curation — all handpicked with passionate readers in mind." />
                 <Sec
                     rtl={true}
                     image={img3}

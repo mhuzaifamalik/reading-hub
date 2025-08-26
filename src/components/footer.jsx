@@ -32,7 +32,7 @@ function Footer() {
                 transition={{ delay: 0.4, duration: 0.6 }}
               >
                 <ul>
-                  {['Home', 'Genres', 'Top Rated', 'Merchandise', 'About'].map((item, idx) => (
+                  {['Home', 'Genres', 'Top Rated', 'Signature Collection', 'About'].map((item, idx) => (
                     <motion.li
                       key={idx}
                       whileHover={{ scale: 1.1 }}

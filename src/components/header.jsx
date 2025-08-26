@@ -29,7 +29,7 @@ function Header() {
                     <motion.li whileHover={{ scale: 1.1 }}><a href="/">Home</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }}><a href="/Genres">Genres</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }}><a href="/Toprated">Top Rated</a></motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}><a href="/contact">Merchandise</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }}><a href="/contact">Signature Collection</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }}><a href="/About">About</a></motion.li>
                      <motion.li whileHover={{ scale: 1.1 }}><a href="/Contact">Contact</a></motion.li>
                 </ul>

@@ -37,7 +37,7 @@ function OurProducts() {
             >
               <span>Minimal designs. Maximum meaning</span>
               <h2>Wear Your Love for Stories</h2>
-              <p>Browse our exclusive collection of TheReadingHub.Net merchandise — all printed on demand and shipped with care. From quote mugs to embroidered owl-logo t-shirts, our merch speaks volumes.</p>
+              <p>Browse our exclusive collection of TheReadingHub.Net Signature Collection — all printed on demand and shipped with care. From quote mugs to embroidered owl-logo t-shirts, our merch speaks volumes.</p>
             </motion.div>
           </Col>
         </Row>

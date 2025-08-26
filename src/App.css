@@ -77,7 +77,7 @@ body {
 .header .nav ul {
   display: flex;
   gap: 0px;
-  background-image: url(../src/images/background-nav.png);
+background: linear-gradient(72deg,rgba(84, 84, 84, 1) 21%, rgba(0, 0, 0, 1) 100%);
   padding: 20px 0px;
   background-position: center;
   border-radius: 30px;
