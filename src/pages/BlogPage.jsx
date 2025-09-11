@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import Img from '../images/testimonails.png'; // Import your image here
 import Img1 from '../images/articalheader.png'; // Import your image here
 function BlogPage() {

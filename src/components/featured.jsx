@@ -71,11 +71,11 @@ function Featured() {
                                         <p>
                                             A mysterious man shows up in a quiet town, bringing with him a string of unsolved disappearances. As secrets unravel, one woman must choose between loyalty and justice in this gripping psychological thriller that questions how well we truly know ...
                                         </p>
-                                        <div className="meta">
+                                        <div className="meta p-5">
                                             <img src={icon} alt="icon" />
                                             <h4>Published 3 days ago</h4>
                                         </div>
-                                        <ul>
+                                        <ul className='p-5'>
                                             <li><img src={testimonails} alt="author" /></li>
                                             <li>
                                                 <span className="first-span">Lara Whitman</span>
