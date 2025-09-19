@@ -2,16 +2,19 @@ import React, { useState } from 'react';
 import logo from '../images/logo.png';
 import { Button, Modal, Form, Input, Divider } from 'antd';
 import { motion } from 'framer-motion';
+import { IoPersonOutline } from "react-icons/io5";
 import { UserOutlined, MailOutlined, LockOutlined } from '@ant-design/icons';
+import { useNavigate } from "react-router-dom";
 
 function Header() {
     const [authOpen, setAuthOpen] = useState(false);
     const [isSignUp, setIsSignUp] = useState(true);
-
+   
     const handleAuth = (values) => {
         console.log("✅ Submitted Data:", values);
         setAuthOpen(false);
     };
+    const navigate = useNavigate();
 
     return (
         <>
@@ -123,7 +126,7 @@ function Header() {
                 <Divider plain>or</Divider>
 
 
-                <p style={{ textAlign: "center" } }  className='font-outfit' className='font-outfit'>
+                <p style={{ textAlign: "center" } }  className='font-outfit'>
                     {isSignUp ? (
                         <>Already have an account?{" "}
                             <a onClick={() => setIsSignUp(false)} style={{ fontWeight: "500" }} className='font-outfit underline'>
@@ -139,6 +142,7 @@ function Header() {
                     )}
                 </p>
             </Modal>
+      
 
 
             <motion.header
@@ -178,6 +182,25 @@ function Header() {
                     whileTap={{ scale: 0.95 }}
                     transition={{ duration: 0.2 }}
                     onClick={() => {
+                  navigate("/bloggerProfile");
+                    }}
+                    className="sign-up-btn font-outfit"
+                    style={{
+                        padding: "10px 20px",
+                        borderRadius: "8px",
+                        background: "#FFA900",
+                        color: "#000",
+                        border: "none",
+                        cursor: "pointer",
+                    }}
+                >
+                Blogger sign uP
+                </motion.button>
+                 <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    transition={{ duration: 0.2 }}
+                    onClick={() => {
                         setIsSignUp(true);
                         setAuthOpen(true);
                     }}
@@ -191,7 +214,7 @@ function Header() {
                         cursor: "pointer",
                     }}
                 >
-                    Sign In / Join
+                  <IoPersonOutline />
                 </motion.button>
             </motion.header>
         </>

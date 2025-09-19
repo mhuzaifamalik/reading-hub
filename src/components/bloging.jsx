@@ -88,7 +88,7 @@ function Bloging({ title, heading, desc }) {
           </Col>
         </Row>
 
-        {/* Render blogs in rows of 3 */}
+ 
         {Array.from({ length: Math.ceil(visibleBlogs.length / 3) }).map((_, rowIdx) => {
           const rowItems = visibleBlogs.slice(rowIdx * 3, rowIdx * 3 + 3);
           return (
@@ -136,7 +136,7 @@ function Bloging({ title, heading, desc }) {
           );
         })}
 
-        {/* Load More Button */}
+      
         {visibleCount < blogs.length && (
           <motion.a
             className="introf"
