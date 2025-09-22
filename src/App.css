@@ -1146,6 +1146,9 @@ textarea {
 .blogging-text-span span{
   background-color: #0000!important;
 }
+.blogging-text {
+  display: none !important;
+}
 
 @keyframes App-logo-spin {
   from {
