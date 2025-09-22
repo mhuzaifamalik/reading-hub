@@ -65,30 +65,32 @@ const cardVariants = {
   }
 };
 
-function Bloging({ title, heading, desc }) {
+function Bloging({ title, heading, desc,hideHeader = false }) {
   const [visibleCount, setVisibleCount] = useState(3); // Show 3 initially
   const visibleBlogs = blogs.slice(0, visibleCount);
 
   return (
     <div className="main-bloging">
       <div className="container">
-        <Row gutter={30}>
-          <Col span={24}>
-            <motion.div
-              className="blogging-text"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <span>{title}</span>
-              <h2>{heading}</h2>
-              <p>{desc}</p>
-            </motion.div>
-          </Col>
-        </Row>
+     {!hideHeader && (   // 👈 conditionally render header
+          <Row gutter={30}>
+            <Col span={24}>
+              <motion.div
+                className="blogging-text"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <span>{title}</span>
+                <h2>{heading}</h2>
+                <p>{desc}</p>
+              </motion.div>
+            </Col>
+          </Row>
+        )}
 
- 
+
         {Array.from({ length: Math.ceil(visibleBlogs.length / 3) }).map((_, rowIdx) => {
           const rowItems = visibleBlogs.slice(rowIdx * 3, rowIdx * 3 + 3);
           return (
@@ -136,7 +138,7 @@ function Bloging({ title, heading, desc }) {
           );
         })}
 
-      
+
         {visibleCount < blogs.length && (
           <motion.a
             className="introf"

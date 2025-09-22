@@ -53,7 +53,7 @@ function bloggerdashboard() {
                     </Col>
                 </Row>
             </div>
-             <Bloging className="blogging-text-span" />
+             <Bloging hideHeader />
         </>
     );
 }
